@@ -75,7 +75,7 @@
                                 <compilerArg>-proc:none</compilerArg>
                             </compilerArgs>
                             <includes>
-                                <include>com/github/kmizu/papt_example/HelloProcessor.java</include>
+                                <include>com/github/kmizu/papt_example/apt/*.java</include>
                             </includes>
                         </configuration>
                     </execution>
@@ -90,6 +90,7 @@
                     <target>17</target>
                     <annotationProcessors>
                         <proc>com.github.kmizu.papt_example.apt.HelloProcessor</proc>
+                        <proc>com.github.kmizu.papt_example.apt.EntryPointProcessor</proc>
                     </annotationProcessors>
                     <encoding>UTF-8</encoding>
                 </configuration>

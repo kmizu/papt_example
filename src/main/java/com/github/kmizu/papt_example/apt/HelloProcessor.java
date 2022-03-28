@@ -15,7 +15,6 @@ import java.util.Set;
 @SupportedSourceVersion(SourceVersion.RELEASE_17)
 public class HelloProcessor extends AbstractProcessor {
     private int round = 0;
-
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment env) {
         // case round == 0 is executed surely
